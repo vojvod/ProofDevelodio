@@ -1,0 +1,317 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "payers",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x4a714c24"
+  },
+  {
+    "inputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor",
+    "signature": "constructor"
+  },
+  {
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "fallback"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "status",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "firstname",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "lastname",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "email",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "fileHash",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "ipfsHash",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "ipfsFileType",
+        "type": "string"
+      }
+    ],
+    "name": "logFileAddedStatus",
+    "type": "event",
+    "signature": "0xe05a20ec1fc8f3904651886da119ec9c016cb4246def2183f3de13f2e4eae679"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_from",
+        "type": "address"
+      },
+      {
+        "name": "_value",
+        "type": "uint256"
+      },
+      {
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "name": "_extraData",
+        "type": "bytes"
+      }
+    ],
+    "name": "receiveApproval",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x8f4ffcb1"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xf3fef3a3"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "firstname",
+        "type": "string"
+      },
+      {
+        "name": "lastname",
+        "type": "string"
+      },
+      {
+        "name": "email",
+        "type": "string"
+      },
+      {
+        "name": "fileHash",
+        "type": "string"
+      },
+      {
+        "name": "ipfsHash",
+        "type": "string"
+      },
+      {
+        "name": "ipfsFileType",
+        "type": "string"
+      },
+      {
+        "name": "comments",
+        "type": "string"
+      }
+    ],
+    "name": "setFile",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function",
+    "signature": "0x1ec7d46f"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "firstname",
+        "type": "string"
+      },
+      {
+        "name": "lastname",
+        "type": "string"
+      },
+      {
+        "name": "email",
+        "type": "string"
+      },
+      {
+        "name": "fileHash",
+        "type": "string"
+      }
+    ],
+    "name": "addOwner",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function",
+    "signature": "0xaac3b6c3"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "fileHash",
+        "type": "string"
+      },
+      {
+        "name": "ownerNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "removeOwner",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function",
+    "signature": "0x4efb8a4b"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "fileHash",
+        "type": "string"
+      }
+    ],
+    "name": "getFile",
+    "outputs": [
+      {
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "name": "blockNumber",
+        "type": "uint256"
+      },
+      {
+        "name": "ipfsHash",
+        "type": "string"
+      },
+      {
+        "name": "ipfsFileType",
+        "type": "string"
+      },
+      {
+        "name": "ownerNumbers",
+        "type": "uint256"
+      },
+      {
+        "name": "comments",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0xe0876aa8"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "fileHash",
+        "type": "string"
+      }
+    ],
+    "name": "getMainFileOwner",
+    "outputs": [
+      {
+        "name": "mainOwner",
+        "type": "address"
+      },
+      {
+        "name": "firstname",
+        "type": "string"
+      },
+      {
+        "name": "lastname",
+        "type": "string"
+      },
+      {
+        "name": "email",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x521c6040"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "fileHash",
+        "type": "string"
+      },
+      {
+        "name": "ownerNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "getFileOwner",
+    "outputs": [
+      {
+        "name": "ownerFirstName",
+        "type": "string"
+      },
+      {
+        "name": "ownerLastName",
+        "type": "string"
+      },
+      {
+        "name": "ownerEmail",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0xcc261e68"
+  }
+]
